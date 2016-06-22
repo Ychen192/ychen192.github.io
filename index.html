@@ -4,45 +4,91 @@
 <html>
   
 <style>
- body{
+.block {
+  padding:200px;
+}
 
-  }
- div {
-  font-size:60px;
-  text-align: center;
-  }
- button{
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  font-size:50px;
-  color:#663300; 
-  font-family: ‘Courier New’, Courier, monospace;
-  font-weight: bold;
-  font-style: oblique;
- }
+.nav-tabs{
+  font-family: Open Sans;
+  font-size: 2.0em;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+}
 
+
+.pageOne{ background:url(https://raw.githubusercontent.com/Ychen192/ychen192.github.io/master/Jap2.JPG);
+  background-size:cover;
+  height:800px;
+  color:white;
+}
+
+.pageTwo{ 
+  background:white;
+  background-size:cover;
+  height:800px;
+  color:black;
+}
+
+.pageThree{ 
+  background:white;
+  background-size:cover;
+  height:800px;
+  color:black;
+}
+
+.pageFour{ 
+  background:white;
+  background-size:cover;
+  height:800px;
+  color:black;
+}
+
+h1{
+  font-size:70px;
+}
 </style>  
   
-<body>
-    <div>
-      <p>
-        <button type="submit">Yan Chen</button>
-      </p>
-      <p>
-        <button type="submit">About me</button>
-      </p>
-      <p>
-        <button id="projectButton" class="submit-button">Projects</button>
-        <script type="text/javascript">
-          document.getElementById("projectButton").onclick = function () {
-          location.href = "https://github.com/Ychen192";
-        };
-        </script>
-      </p>
-    </div>
-</body>
+<header>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</header>
+  
+<div id="nav" class = "container-fluid">
+  <ul class = "nav nav-tabs nav-stacked">
+    <li>
+      <a href="#p1">Yan Chen</a>
+    </li>
+    <li>
+      <a href="#p2">About me</a>
+    </li>
+    <li>
+      <a href="#p3">Portfolio</a>
+    </li>
+    <li>
+      <a href="#p4">Contact Me</a>
+    </li>
+  </ul>
+</div>
+
+<div class="pageOne" id="s1">
+  <div class = "block text-center">
+  <h1>Yan Chen</h1>
+  <h2>Always learning</h2>
+  </div>
+</div>
+
+<!--
+<div class="pageTwo" id="p2">
+  <h1>About Me</h1>
+</div>
+
+<div class="pageThree" id="p3">
+  <h1>Portfolio</h1>
+</div>
+
+<div class="pageFour" id="p4">
+  <h1>Contact Me</h1>
+</div>
+-->
 
 </html>
